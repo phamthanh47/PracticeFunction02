@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function minof3number(number1,number2,number3){
+        let min =(number2<number3)?number2:number3;
+        if(min < number1){
+            return min;
+        }
+        else min= number1;
+        return min;
+    }
+    let num1=parseInt(prompt("enter number 1: "));
+    let num2=parseInt(prompt("enter number 2: "));
+    let num3=parseInt(prompt("enter number 3: "));
+    document.write(minof3number(num1,num2,num3));
+</script>
+</body>
+</html>

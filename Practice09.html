@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function character(arr,char){
+        let i;
+        let count=0;
+        let vt;
+        for(i=0;i< arr.length;i++){
+            if(char===arr[i]){
+                vt=i;
+                document.write(" vi tri : "+ i + "  ");
+                count= count +1;
+
+            }
+            if(i===arr.length-1){
+            break;
+            }
+        }
+        return count;
+    }
+    let arr1=[3,4,6,7,8,9,34,8];
+    let v=8;
+    let result=character(arr1,v);
+    document.write(" so lan xuat hien :"+ result);
+</script>
+</body>
+</html>
